@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # About
 This is a Hashicorp Packer script to create a Microsoft Windows Server 2022 Desktop or COre template VM on the Proxmox hypervisor. The template includes the latest Microsoft Windows Upates, virtio drivers and the Cloudbase client software.
 
@@ -25,3 +26,7 @@ The packer scripts uses the `cd_files` command and needs one of the following to
 
 # Usage
 
+=======
+# packer-windows-proxmox
+Build a Windows Server 2022 template with Packer on Proxmox
+>>>>>>> e9bac7b3c5921fde4ffb956cfcf2579f60820bc5
