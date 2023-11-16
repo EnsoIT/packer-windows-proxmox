@@ -1,5 +1,5 @@
 # About
-This is a Hashicorp Packer script to create a Microsoft Windows Server 2022 Desktop or Core template VM on the Proxmox hypervisor. The template includes the latest Microsoft Windows Upates, virtio drivers and the Cloudbase client software.
+This is a Hashicorp Packer script to create a Microsoft Windows Server 2022 Desktop or Core template VM on the Proxmox hypervisor. The template includes the latest Microsoft Windows Updates, virtio drivers and the Cloudbase client software.
 
 ## Highlights
 
@@ -24,7 +24,7 @@ The packer scripts uses the `cd_files` command and needs one of the following to
 - oscdimg (normally found in Windows as part of the Windows ADK)
 
 # Links and sources
-Working with cloud-init and Windows is chalanging. Windows doesn't accept an encrypted password. This can be fixed with a patch.
+Working with cloud-init and Windows is challenging. Windows doesn't accept an encrypted password. This can be fixed with a patch.
 More info can be found on on the following git repository: [Geco-IT](https://git.geco-it.net/GECO-IT-PUBLIC/Geco-Cloudbase-Init/src/branch/master).
 The Promox forum has a thread about Cloudbase and Windows VM's and how to make it work: [Proxmox Forum](https://forum.proxmox.com/threads/howto-scripts-to-make-cloudbase-work-like-cloudinit-for-your-windows-based-instances.103375/) 
 
