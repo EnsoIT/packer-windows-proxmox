@@ -23,5 +23,12 @@ The packer scripts uses the `cd_files` command and needs one of the following to
 - hdiutil (normally found in macOS)
 - oscdimg (normally found in Windows as part of the Windows ADK)
 
-# Usage
+# Links and sources
+Working with cloud-init and Windows is chalanging. Windows doesn't accept an encrypted password. This can be fixed with a patch.
+More info can be found on on the following git repository: [Geco-IT](https://git.geco-it.net/GECO-IT-PUBLIC/Geco-Cloudbase-Init/src/branch/master).
+The Promox forum has a thread about Cloudbase and Windows VM's and how to make it work: [Proxmox Forum](https://forum.proxmox.com/threads/howto-scripts-to-make-cloudbase-work-like-cloudinit-for-your-windows-based-instances.103375/) 
 
+# Usage
+1. Change the variables in the `variables.auto.pkrvars.hcl` file and adjust te variables to your needs.
+2. Run `packer init .` to initialize packer and install the defined plugins.
+3. Run `packer build .` to create a Windows Server 2022 Desktop edition template or run `packer build -var template=core .` to create a Windows Server 2022 Core edition template.
