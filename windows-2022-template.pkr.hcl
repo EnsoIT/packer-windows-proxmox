@@ -1,7 +1,7 @@
 packer {
   required_plugins {
     windows-update = {
-      version = "0.14.3"
+      version = "0.15.0"
       source = "github.com/rgl/windows-update"
     }
     proxmox = {
@@ -90,7 +90,7 @@ source "proxmox-iso" "windows2022" {
   # Boot
   boot_wait = "7s"
   boot_command = [
-    "<enter>"
+    "<enter><wait><enter><wait><enter>"
   ]
 
 }
